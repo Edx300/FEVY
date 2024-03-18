@@ -8,7 +8,6 @@ public class PlayerController : MonoBehaviour
     //[SerializeField] private UnityEvent<Vector2> _onMove = new(); //para llamar al movimiento
 
     //stats
-    [SerializeField] public float _healthPlayer = 100;
     [SerializeField] public float _resistance = 100;
     [SerializeField] public float _speed = 3;
     [SerializeField] public float _power = 2;
@@ -21,7 +20,13 @@ public class PlayerController : MonoBehaviour
     public bool _touchingGround;
     public RaycastHit hit;
     public Transform _rayCaster;
+
     public LayerMask terrainLayer; //layer del terreno
+    public LayerMask enemiesLayer;
+
+    public Transform _attackPoint;
+    public float _attackRange = .5f;
+
 
     public SpriteRenderer _PlayerSprite; // sprite del jugador
 
@@ -61,11 +66,21 @@ public class PlayerController : MonoBehaviour
                 _tired = true;
 
             }
-        } else
+        } 
+        else
         {
             _speed = 3f;
             _resistance += 5 * Time.deltaTime;
             _resistance = Mathf.Clamp(_resistance, 0, 100);
+        }
+
+
+        //atacar
+        if (Input.GetMouseButtonDown(0) ) 
+        {
+            Attack();
+        
+        
         }
 
        
@@ -86,5 +101,27 @@ public class PlayerController : MonoBehaviour
         {
             _tired = false;
         }
+    }
+
+    private void Attack()
+    {
+        //attack animation
+        //detect enemies
+        Collider[] hitenemies = Physics.OverlapSphere(_attackPoint.position, _attackRange, enemiesLayer);
+        // make damage
+        foreach ( Collider enemy in hitenemies )
+        {
+            Debug.Log("You hit an enemy!");
+        }
+
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        if (_attackPoint == null)
+        {
+            return;
+        }
+        Gizmos.DrawSphere(_attackPoint.position, _attackRange);
     }
 }
