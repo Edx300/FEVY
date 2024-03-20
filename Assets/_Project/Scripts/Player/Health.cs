@@ -5,9 +5,11 @@ using UnityEngine.Events;
 
 public class Health : MonoBehaviour
 {
+    [SerializeField] private LayerMask _enemies;
     [SerializeField] public float _maxHealthPlayer = 100;
-    [SerializeField] private UnityEvent _onDie = new();
     private float _currentHealth = default;
+
+    
 
     // Start is called before the first frame update
     void Start()
@@ -22,12 +24,6 @@ public class Health : MonoBehaviour
 
     public void DoDamage(int damage)
     {
-        _currentHealth -= Mathf.Abs(damage);
-        if (_currentHealth <= 0) 
-        { 
-            _onDie.Invoke();
-            _currentHealth = _maxHealthPlayer;
         
-        }
     }
 }
