@@ -5,10 +5,14 @@ using UnityEngine.AI;
 
 public class AIBasics : MonoBehaviour
 {
+    public float _health = 15;
+    public float _damageGiven;
+
+    PlayerController playerController; // pa agarrar la vida
+    [SerializeField] GameObject PlayerHealth;
+
     public NavMeshAgent agent;
-
     public Transform player;
-
     public LayerMask LTerrain, LPlayer;
 
     //Walking stuff
@@ -23,6 +27,11 @@ public class AIBasics : MonoBehaviour
     //States for the enemy
     public float sightRange, attackRange;
     public bool playerInSight, playerInAttackRange;
+
+    private void Awake()
+    {
+        playerController = PlayerHealth.GetComponent<PlayerController>();
+    }
 
     void Start()
     {
@@ -51,6 +60,10 @@ public class AIBasics : MonoBehaviour
         {
             Attacking();
         }
+
+        if (_health <= 0)
+        {
+            Death();        }
 
     }
 
@@ -105,8 +118,8 @@ public class AIBasics : MonoBehaviour
         {
             //inserta codigo de ataque aqui lol
             Debug.Log("Ataque de enemigo!");
-
-
+            playerController._health = playerController._health - _damageGiven; 
+           
 
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
@@ -117,6 +130,12 @@ public class AIBasics : MonoBehaviour
     private void ResetAttack()
     {
         alreadyAttacked = false;
+    }
+
+
+    private void Death()
+    {
+        Destroy(gameObject);
     }
 
 }

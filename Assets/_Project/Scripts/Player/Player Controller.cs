@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     //[SerializeField] private UnityEvent<Vector2> _onMove = new(); //para llamar al movimiento
 
     //stats
+    [SerializeField] public float _health = 100;
     [SerializeField] public float _resistance = 100;
     [SerializeField] public float _speed = 3;
     [SerializeField] public float _power = 2;
@@ -27,8 +28,15 @@ public class PlayerController : MonoBehaviour
     public Transform _attackPoint;
     public float _attackRange = .5f;
 
+    AIBasics EnemyBasic;
+    [SerializeField] GameObject EnemyHealth;
 
     public SpriteRenderer _PlayerSprite; // sprite del jugador
+
+    private void Awake()
+    {
+        EnemyBasic = EnemyHealth.GetComponent<AIBasics>();
+    }
 
     void Start()
     {
@@ -83,7 +91,12 @@ public class PlayerController : MonoBehaviour
         
         }
 
-       
+        if (_health <= 0)
+        {
+            //Death animation
+            Debug.Log("Te moriste pai");
+        }
+
     }
 
     private void FixedUpdate()
@@ -111,10 +124,13 @@ public class PlayerController : MonoBehaviour
         // make damage
         foreach ( Collider enemy in hitenemies )
         {
+            EnemyBasic._health = EnemyBasic._health - _power;
             Debug.Log("You hit an enemy!");
         }
 
     }
+
+   
 
     private void OnDrawGizmosSelected()
     {
