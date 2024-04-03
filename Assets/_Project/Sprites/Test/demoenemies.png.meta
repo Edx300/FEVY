@@ -1,0 +1,1434 @@
+fileFormatVersion: 2
+guid: d3f64ded5b5a99f428d3f6486a2f68fe
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: demoenemies_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 658
+        width: 180
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c189f86c4697734e861ef467b04205d
+      internalID: 834474343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_1
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 658
+        width: 179
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eee0be2f8a8ff5f44943a9159444a3eb
+      internalID: 1493529283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_2
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 652
+        width: 178
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d883f604475a7a84180646f67dc5482a
+      internalID: 9215759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_3
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 651
+        width: 180
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f13e9bd0e30a4348b1eb941eee83877
+      internalID: 1121127481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_4
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 651
+        width: 178
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c29f09bb98db9a48937d18830b498db
+      internalID: -1222324671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_5
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 651
+        width: 177
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7fae7e52403a1b40b54a0bb666a4eff
+      internalID: -2045936026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_6
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 650
+        width: 178
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0e58e7b709fdbb41bf58cd092ca7721
+      internalID: -166697153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_7
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 649
+        width: 171
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 597357fbfa476a74b83d326889d11c9d
+      internalID: -1409016495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_8
+      rect:
+        serializedVersion: 2
+        x: 1487
+        y: 649
+        width: 171
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1b6bf2cdd43af54ba91900575425e84
+      internalID: 2097918579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_9
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 647
+        width: 170
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5b62be32b0b8284dbee2f5c5c266718
+      internalID: -571685060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_10
+      rect:
+        serializedVersion: 2
+        x: 1844
+        y: 646
+        width: 171
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7fef3361cfae5f4e93089e68fdc3f19
+      internalID: 355582358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_11
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 552
+        width: 170
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85859b3d46ff7c54095d03077c129557
+      internalID: -526584821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_12
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 551
+        width: 174
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51605fcf86d72cc43ab1019309d2dc83
+      internalID: 717251678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_13
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 545
+        width: 169
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9b4be8644f2db74597b3b1be09ffeb9
+      internalID: 762855949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_14
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 543
+        width: 174
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11cde43b02a6a34419c9806549307402
+      internalID: -1823678660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_15
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 541
+        width: 172
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9f6a22eee60b2a4798309b70b8929c8
+      internalID: 1405221103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_16
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 541
+        width: 169
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0ea50a4ff70f4a4ab664dbba3547507
+      internalID: 561963054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_17
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 538
+        width: 172
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d5c66acbaaa90e4c8ded807b186f14b
+      internalID: -816424500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_18
+      rect:
+        serializedVersion: 2
+        x: 1258
+        y: 534
+        width: 171
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5d79b09762c8ac4f9d7c838dba618c5
+      internalID: 1044889773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_19
+      rect:
+        serializedVersion: 2
+        x: 1437
+        y: 529
+        width: 161
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00dcc73448f62f342b21409f7aa9ea15
+      internalID: 315583465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_20
+      rect:
+        serializedVersion: 2
+        x: 1606
+        y: 527
+        width: 153
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f3ed76dc4361b3469751775892372c7
+      internalID: -192987982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_21
+      rect:
+        serializedVersion: 2
+        x: 1767
+        y: 525
+        width: 155
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50251b56856a4984186ab40baa8fb657
+      internalID: 760491358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_22
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 429
+        width: 161
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6871c4c425f22c45b6ae3ea54862100
+      internalID: -1008517165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_23
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 405
+        width: 160
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6af6c21a1d463704fa88143bed077cdc
+      internalID: 1092624690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_24
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 398
+        width: 157
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07490dd18eabd954484c3057187e1b56
+      internalID: 1074616909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_25
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 395
+        width: 152
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdb83f942c5e86546b243ffd9bb548e5
+      internalID: -2077580586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_26
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 393
+        width: 159
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab8fab6beeed1e24cac5f50b0cff3103
+      internalID: 492156288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_27
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 392
+        width: 158
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c974641639a11ac44a865318a3d584a0
+      internalID: 106812881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_28
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 388
+        width: 156
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd466841439c2874180d5af2fcd2a6a5
+      internalID: 400753194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_29
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 384
+        width: 158
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8455ee1b744c1834f8e86ac2400f345c
+      internalID: -1605354440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_30
+      rect:
+        serializedVersion: 2
+        x: 1327
+        y: 378
+        width: 159
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f51480dba82abe04ca8136835f0323bb
+      internalID: 1567816032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_31
+      rect:
+        serializedVersion: 2
+        x: 1494
+        y: 372
+        width: 159
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c0401d5879037047bae4987efda0905
+      internalID: -1202307119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_32
+      rect:
+        serializedVersion: 2
+        x: 1661
+        y: 369
+        width: 162
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a8deb2e91f22e241be2096b0c29f304
+      internalID: 1472779535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_33
+      rect:
+        serializedVersion: 2
+        x: 1831
+        y: 368
+        width: 161
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0a6d59c10ad98b42b616dd842205db7
+      internalID: -1915123839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_34
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 270
+        width: 159
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 136fb3023babfb646b26424a0b55158b
+      internalID: 880081392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_35
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 236
+        width: 154
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3a3ca0e1373db4478b0c1434cd0ccfd
+      internalID: -1721742600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_36
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 226
+        width: 146
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b39f5d11be7a03458fe6a51210cb3b8
+      internalID: -1917849249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_37
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 219
+        width: 145
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11f211d08f3002045b5771616931fcb8
+      internalID: -1111178798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_38
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 216
+        width: 144
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e18cec9cc222314398d2bba38fc6575
+      internalID: 2015590181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_39
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 215
+        width: 144
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d51471c40dbd8bc4d859689e397ee3f2
+      internalID: -302944405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_40
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 211
+        width: 159
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d3f8d1b0722ec244b39b25281b594fc
+      internalID: 1747174657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_41
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 207
+        width: 146
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6f2ff95fd0b0a4459e66166ff13cf31
+      internalID: -705673990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_42
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 201
+        width: 160
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 940efbac7b6148f40b225c8037ccf287
+      internalID: -719781039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_43
+      rect:
+        serializedVersion: 2
+        x: 1431
+        y: 194
+        width: 157
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 819e4e689d8514f4d873c7cc007cb053
+      internalID: 231868128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_44
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 191
+        width: 135
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99d76c373774a764c8a3f10e963c7474
+      internalID: 784014563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_45
+      rect:
+        serializedVersion: 2
+        x: 1739
+        y: 189
+        width: 137
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90f1fe413c3ed8740a62c653e6728c3e
+      internalID: -1117635096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_46
+      rect:
+        serializedVersion: 2
+        x: 1884
+        y: 188
+        width: 139
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88a3b8e049d3ef149b01c1e4134dd903
+      internalID: 1625798848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_47
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 89
+        width: 132
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06954c8735f6dd64da56b7aa13236cb7
+      internalID: -1671043645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_48
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 55
+        width: 136
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d864d8b98bf7314cbcb412513bfe8b8
+      internalID: 36085091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_49
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 45
+        width: 134
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa5a5b7aca387194e9ed17ac2b49a513
+      internalID: 1806288058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_50
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 38
+        width: 136
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aa042c4cab436f4caca60ae5313fe2e
+      internalID: -1981120565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_51
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 34
+        width: 135
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 759fb75307162f046baf74143188b83e
+      internalID: 1885215046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_52
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 32
+        width: 159
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 370c399a8dcd78a4898d2aa86bcfe9e8
+      internalID: -26050391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_53
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 28
+        width: 135
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99f157c57b7731b49b1b48ce49600b4a
+      internalID: 1058933059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_54
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 23
+        width: 158
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c90e54f7a06db1458789588b517b3bc
+      internalID: 263853102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_55
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 16
+        width: 157
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b35991155856f44295952361cdb8fe2
+      internalID: -1589233384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_56
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 9
+        width: 158
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f00f9860a1394e409bc5f552d57a57d
+      internalID: 1398039053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_57
+      rect:
+        serializedVersion: 2
+        x: 1522
+        y: 5
+        width: 147
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6195464ab6b75f44a91c99f3981e2b5
+      internalID: -1677191617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_58
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 3
+        width: 159
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eb99db63505e114787698d66ea3348e
+      internalID: 1400259596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoenemies_59
+      rect:
+        serializedVersion: 2
+        x: 1844
+        y: 2
+        width: 158
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bed22447ab70b8d49875b199e611b7d5
+      internalID: -1161796458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 51adcecf5c42723478a482f36df69369
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      demoenemies_0: 834474343
+      demoenemies_1: 1493529283
+      demoenemies_10: 355582358
+      demoenemies_11: -526584821
+      demoenemies_12: 717251678
+      demoenemies_13: 762855949
+      demoenemies_14: -1823678660
+      demoenemies_15: 1405221103
+      demoenemies_16: 561963054
+      demoenemies_17: -816424500
+      demoenemies_18: 1044889773
+      demoenemies_19: 315583465
+      demoenemies_2: 9215759
+      demoenemies_20: -192987982
+      demoenemies_21: 760491358
+      demoenemies_22: -1008517165
+      demoenemies_23: 1092624690
+      demoenemies_24: 1074616909
+      demoenemies_25: -2077580586
+      demoenemies_26: 492156288
+      demoenemies_27: 106812881
+      demoenemies_28: 400753194
+      demoenemies_29: -1605354440
+      demoenemies_3: 1121127481
+      demoenemies_30: 1567816032
+      demoenemies_31: -1202307119
+      demoenemies_32: 1472779535
+      demoenemies_33: -1915123839
+      demoenemies_34: 880081392
+      demoenemies_35: -1721742600
+      demoenemies_36: -1917849249
+      demoenemies_37: -1111178798
+      demoenemies_38: 2015590181
+      demoenemies_39: -302944405
+      demoenemies_4: -1222324671
+      demoenemies_40: 1747174657
+      demoenemies_41: -705673990
+      demoenemies_42: -719781039
+      demoenemies_43: 231868128
+      demoenemies_44: 784014563
+      demoenemies_45: -1117635096
+      demoenemies_46: 1625798848
+      demoenemies_47: -1671043645
+      demoenemies_48: 36085091
+      demoenemies_49: 1806288058
+      demoenemies_5: -2045936026
+      demoenemies_50: -1981120565
+      demoenemies_51: 1885215046
+      demoenemies_52: -26050391
+      demoenemies_53: 1058933059
+      demoenemies_54: 263853102
+      demoenemies_55: -1589233384
+      demoenemies_56: 1398039053
+      demoenemies_57: -1677191617
+      demoenemies_58: 1400259596
+      demoenemies_59: -1161796458
+      demoenemies_6: -166697153
+      demoenemies_7: -1409016495
+      demoenemies_8: 2097918579
+      demoenemies_9: -571685060
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

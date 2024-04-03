@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class PlayerController : MonoBehaviour
+public class OldPlayerController : MonoBehaviour
 {
     //[SerializeField] private UnityEvent<Vector2> _onMove = new(); //para llamar al movimiento
 
@@ -124,7 +124,7 @@ public class PlayerController : MonoBehaviour
         // make damage
         foreach ( Collider enemy in hitenemies )
         {
-            EnemyBasic._health = EnemyBasic._health - _power;
+            //EnemyBasic._health = EnemyBasic._health - _power;
             Debug.Log("You hit an enemy!");
         }
 

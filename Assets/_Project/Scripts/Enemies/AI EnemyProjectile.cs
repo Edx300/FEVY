@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class AIBasics : MonoBehaviour
+public class AIEnemyProjectile : MonoBehaviour
 {
-
 
     public NavMeshAgent agent;
     public Transform player;
@@ -19,6 +18,7 @@ public class AIBasics : MonoBehaviour
     //Attacking stuff
     public float timeBetweenAttacks;
     bool alreadyAttacked;
+    public GameObject projectile;
 
     //States for the enemy
     public float sightRange, attackRange;
@@ -39,7 +39,7 @@ public class AIBasics : MonoBehaviour
         playerInSight = Physics.CheckSphere(transform.position, sightRange, LPlayer);
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, LPlayer);
 
-        if (!playerInSight && !playerInAttackRange ) 
+        if (!playerInSight && !playerInAttackRange)
         {
             Walking();
         }
@@ -58,7 +58,7 @@ public class AIBasics : MonoBehaviour
 
     private void Walking()
     {
-        if(!walkPointSet) 
+        if (!walkPointSet)
         {
             SearchWalkPoint();
         }
@@ -71,22 +71,22 @@ public class AIBasics : MonoBehaviour
         Vector3 distanceToWalkPoint = transform.position - walkPoint;
 
         //llega a su destino
-        if(distanceToWalkPoint.magnitude < 1f)
+        if (distanceToWalkPoint.magnitude < 1f)
         {
             walkPointSet = false;
         }
 
     }
 
-    private void SearchWalkPoint() 
+    private void SearchWalkPoint()
     {
         float randomZ = Random.Range(-walkPointRange, walkPointRange);
         float randomX = Random.Range(-walkPointRange, walkPointRange);
 
-        walkPoint = new Vector3 (transform.position.x + randomX, transform.position.y, transform.position.z + randomZ);
+        walkPoint = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.z + randomZ);
 
 
-        if(Physics.Raycast(walkPoint, -transform.up, 2f, LTerrain))
+        if (Physics.Raycast(walkPoint, -transform.up, 2f, LTerrain))
         {
             walkPointSet = true;
         }
@@ -99,22 +99,24 @@ public class AIBasics : MonoBehaviour
     }
     private void Attacking()
     {
-        agent.SetDestination (transform.position);
+        agent.SetDestination(transform.position);
 
         transform.LookAt(player);
 
-        if(!alreadyAttacked)
+        if (!alreadyAttacked)
         {
- 
+
             Debug.Log("Ataque de enemigo!");
-           
+            Rigidbody rb = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
+            rb.AddForce(transform.forward * 5f, ForceMode.Impulse);
+            rb.AddForce(transform.up * 2f, ForceMode.Impulse);
 
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
         }
 
     }
-    
+
     private void ResetAttack()
     {
         alreadyAttacked = false;
@@ -125,5 +127,4 @@ public class AIBasics : MonoBehaviour
     {
         Destroy(gameObject);
     }
-
 }

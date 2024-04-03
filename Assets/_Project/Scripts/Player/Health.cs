@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,25 +6,33 @@ using UnityEngine.Events;
 
 public class Health : MonoBehaviour
 {
-    [SerializeField] private LayerMask _enemies;
-    [SerializeField] public float _maxHealthPlayer = 100;
-    private float _currentHealth = default;
+    [SerializeField] private int _maxHp = 100;
+    [SerializeField] private int _currentHp = default;
+    [SerializeField] private UnityEvent _onDie = new();
 
-    
+    public HealthBarScript healthBar;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        _currentHealth = _maxHealthPlayer;
+        _currentHp = _maxHp;
+        healthBar.SetMaxHealth(_maxHp);
     }
 
-    public void CollisionDamage()
+    public void CollisionDamage() //si choca, pierde vida
     {
         DoDamage(10);
     }
 
-    public void DoDamage(int damage)
+    public void DoDamage(int val) 
     {
-        
+        _currentHp -= Mathf.Abs(val);
+        if (_currentHp <= 0)
+        {
+            _onDie?.Invoke();
+            _currentHp = _maxHp;
+        }
+
+        healthBar.SetHealth(_currentHp);
     }
+
 }
