@@ -18,6 +18,7 @@ public class AIEnemyProjectile : MonoBehaviour
     //Attacking stuff
     public float timeBetweenAttacks;
     bool alreadyAttacked;
+    [SerializeField] private Transform _spawnPoint = default;
     public GameObject projectile;
 
     //States for the enemy
@@ -105,11 +106,11 @@ public class AIEnemyProjectile : MonoBehaviour
 
         if (!alreadyAttacked)
         {
-
-            Debug.Log("Ataque de enemigo!");
-            Rigidbody rb = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
-            rb.AddForce(transform.forward * 5f, ForceMode.Impulse);
-            rb.AddForce(transform.up * 2f, ForceMode.Impulse);
+            Rigidbody rb = Instantiate(projectile, _spawnPoint.position, Quaternion.identity).GetComponent<Rigidbody>();
+            
+            
+            rb.AddForce(transform.forward * 8f, ForceMode.Impulse);
+            rb.AddForce(transform.up * 1f, ForceMode.Impulse);
 
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
@@ -127,4 +128,11 @@ public class AIEnemyProjectile : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, attackRange);
+    }
+
 }

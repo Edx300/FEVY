@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - BULLETS
+  - world
+  - healthCure
+  - Interactables
   layers:
   - Default
   - TransparentFX

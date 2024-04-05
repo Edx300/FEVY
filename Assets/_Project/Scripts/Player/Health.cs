@@ -35,4 +35,18 @@ public class Health : MonoBehaviour
         healthBar.SetHealth(_currentHp);
     }
 
+    public void RestoreHealth()
+    {
+        
+        if (_currentHp >= 100)
+        {
+            _currentHp = 100;
+        } else
+        {
+            _currentHp += Mathf.Abs(5);
+        }
+
+        healthBar.SetHealth(_currentHp);
+    }
+
 }
