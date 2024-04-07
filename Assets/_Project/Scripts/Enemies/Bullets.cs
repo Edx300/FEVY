@@ -16,13 +16,13 @@ public class Bullets : MonoBehaviour
         {
             case "Player":
                 
-                Destroy(projectile);
+                Destroy(projectile,.5f);
 
                 break;
 
             case "world":
 
-                Destroy(projectile);
+                Destroy(projectile,1f);
 
                 break;
 

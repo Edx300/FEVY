@@ -3,33 +3,32 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class Interactable : MonoBehaviour
+public class HeartContAndOrbs : MonoBehaviour
 {
+    //public PlayerManager PlayerManager;
 
-    //[SerializeField] public bool _needsToDissapear;
-    // [SerializeField] public GameObject _gameObj;
     public bool _isInRange;
-    public KeyCode _interactKey;
     public UnityEvent _interactAction;
 
+
+    
+
+    [SerializeField] public bool _needsToDissapear;
+    [SerializeField] public GameObject _gameObj;
 
     void Update()
     {
         if (_isInRange)
         {
-            if (Input.GetKeyDown(_interactKey))
-            {
-                _interactAction.Invoke();
-                /* 
+            _interactAction.Invoke();
+            
                 if (_needsToDissapear)
                 {
                   
                     Destroy(_gameObj);
                     
                 }
-                */
-            }
-
+                
         }
     }
 
@@ -40,9 +39,7 @@ public class Interactable : MonoBehaviour
             case "Player":
 
                 _isInRange = true;
-                other.gameObject.GetComponent<PlayerManager>().NotifyPlayer();
-                //Debug.Log("Player is in range");
-                
+
                 break;
         }
 
@@ -65,5 +62,6 @@ public class Interactable : MonoBehaviour
 
         }
     }
+
 
 }
