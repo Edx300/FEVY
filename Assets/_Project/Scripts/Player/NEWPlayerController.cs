@@ -11,6 +11,7 @@ public class NEWPlayerController : MonoBehaviour
     //stats
     [SerializeField] private int _speed;
     [SerializeField] public float _resistance = 100;
+    [SerializeField] public float _resistanceloose = 5f;
     public bool _tired = false;
 
 
@@ -43,7 +44,6 @@ public class NEWPlayerController : MonoBehaviour
         playerControls.Enable();
     }
 
-    // Start is called before the first frame update
     void Start()
     {
 
@@ -52,7 +52,6 @@ public class NEWPlayerController : MonoBehaviour
 
     }
 
-    // Update is called once per frame
     void Update()
     {
         float x = playerControls.Player.Movement.ReadValue<Vector2>().x;
@@ -126,7 +125,7 @@ public class NEWPlayerController : MonoBehaviour
     private void Run()
     {
         _speed = 7;
-        _resistance -= 2 * Time.deltaTime;
+        _resistance -= _resistanceloose * Time.deltaTime;
         resistanceBar.SetHealth(_resistance);
 
         if (_resistance <= 0)

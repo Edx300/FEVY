@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
+    [SerializeField] public PlayerAttack playerAttack;
+    [SerializeField] public NEWPlayerController controller;
     public GameObject icon;
     public int _adquiredOrbs = 0;
-    public bool _attackGetsPowerUp;
-    public bool _resistanceGetsPowerUp;
 
     public void NotifyPlayer()
     {
@@ -30,6 +30,16 @@ public class PlayerManager : MonoBehaviour
             //needs to open door
             Debug.Log("ya tienes los 3! La puerta se ha abierto");
         }
+    }
+
+    public void AttackImprovement()
+    {
+        playerAttack._attackPower += 5f;
+      
+    }
+    public void ResistanceImprovement()
+    {
+        controller._resistanceloose = 3f;
     }
 
 }
