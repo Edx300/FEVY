@@ -11,6 +11,12 @@ public class AIBasics : MonoBehaviour
     public Transform player;
     public LayerMask LTerrain, LPlayer;
 
+
+    //animator sprite
+    //[SerializeField] private Animator _anim;
+    [SerializeField] private SpriteRenderer _enemySprite;
+
+
     //Walking stuff
     public Vector3 walkPoint;
     bool walkPointSet;
@@ -35,6 +41,10 @@ public class AIBasics : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Look At
+
+        //_enemySprite
+
         //REVISAR SI EL JUGADOR ESTA CERCA
         playerInSight = Physics.CheckSphere(transform.position, sightRange, LPlayer);
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, LPlayer);

@@ -53,7 +53,7 @@ public class HeartContAndOrbs : MonoBehaviour
             case "Player":
 
                 _isInRange = false;
-                other.gameObject.GetComponent<PlayerManager>().DeNotifyPlayer();
+                //other.gameObject.GetComponent<PlayerManager>().DeNotifyPlayer();
                 //Debug.Log("Player is out of range");
 
                 break;

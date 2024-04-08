@@ -6,6 +6,7 @@ public class PlayerManager : MonoBehaviour
 {
     [SerializeField] public PlayerAttack playerAttack;
     [SerializeField] public NEWPlayerController controller;
+    [SerializeField] public GameObject _door;
     public GameObject icon;
     public int _adquiredOrbs = 0;
 
@@ -29,6 +30,7 @@ public class PlayerManager : MonoBehaviour
         {
             //needs to open door
             Debug.Log("ya tienes los 3! La puerta se ha abierto");
+            _door.SetActive(false);
         }
     }
 
