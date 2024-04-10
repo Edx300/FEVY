@@ -7,15 +7,17 @@ using UnityEngine.Events;
 public class Health : MonoBehaviour
 {
     [SerializeField] private int _maxHp = 100;
-    [SerializeField] public int _currentHp = default;
+    [SerializeField] private int _currentHp = default;
     [SerializeField] private UnityEvent _onDie = new();
+
+    public int CurrentHP => _currentHp;
 
     public HealthBarScript healthBar;
 
     private void Start()
     {
-        _currentHp = _maxHp;
-        healthBar.SetMaxHealth(_maxHp);
+        _currentHp = PlayerPrefs.GetInt("_currentHp", _maxHp);
+        ChangeHealth(CurrentHP);
     }
 
     public void CollisionDamage() //si choca, pierde vida
@@ -46,6 +48,14 @@ public class Health : MonoBehaviour
             _currentHp += Mathf.Abs(5);
         }
 
+        healthBar.SetHealth(_currentHp);
+    }
+
+    public void ChangeHealth(int val)
+    {
+       
+        _currentHp = val;
+        Debug.Log(val);
         healthBar.SetHealth(_currentHp);
     }
 

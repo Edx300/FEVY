@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem.XR;
 
 
-  //clase para probar el nuevo input system que vi  xd
+//clase para probar el nuevo input system que vi  xd
 
 
 public class NEWPlayerController : MonoBehaviour
@@ -31,9 +32,13 @@ public class NEWPlayerController : MonoBehaviour
     private PlayerControls playerControls;
 
     private Rigidbody rb;
-    private Vector3 movement;
+    private Vector3 movement; //posicion
 
     public HealthBarScript resistanceBar;
+
+
+
+    public Vector3 PlayerPos => movement; //para guardar
 
     private void Awake()
     {
@@ -47,6 +52,8 @@ public class NEWPlayerController : MonoBehaviour
     void Start()
     {
 
+        //movement = PlayerPrefs.GetString("PlayerPos", JsonUtility.ToJson());
+        ChangePos(movement);
         rb = GetComponent<Rigidbody>();
         resistanceBar.SetMaxHealth(_resistance);
 
@@ -54,6 +61,7 @@ public class NEWPlayerController : MonoBehaviour
 
     void Update()
     {
+        Debug.Log("posicion:" + movement);
         float x = playerControls.Player.Movement.ReadValue<Vector2>().x;
         float z = playerControls.Player.Movement.ReadValue<Vector2>().y;
 
@@ -147,6 +155,17 @@ public class NEWPlayerController : MonoBehaviour
         }
     }
 
+    public void ChangePos(Vector3 val)
+    {
+        movement = val;
+        Debug.Log(val);
+        //Debug.Log(val);
 
-   
+    }
+
+    public void DefaultPos(Vector3 val)
+    {
+        movement = _playerSprite.transform.position;
+    }
+
 }
