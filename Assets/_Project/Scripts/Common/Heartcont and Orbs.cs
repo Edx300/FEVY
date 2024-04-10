@@ -16,6 +16,11 @@ public class HeartContAndOrbs : MonoBehaviour
     [SerializeField] public bool _needsToDissapear;
     [SerializeField] public GameObject _gameObj;
 
+
+    [SerializeField] private bool Red, Blue, Green, none;
+
+    [SerializeField] private GameObject _BlueOrb, _RedOrb, _GreenOrb;
+
     void Update()
     {
         if (_isInRange)
@@ -24,8 +29,18 @@ public class HeartContAndOrbs : MonoBehaviour
             
                 if (_needsToDissapear)
                 {
-                  
+                  if(none){
                     Destroy(_gameObj);
+                    } else if(Red){
+                        Destroy(_RedOrb);
+                    }else if(Blue) {
+                    Destroy(_BlueOrb);
+                }
+                  else if(Green)
+                {
+                    Destroy(_GreenOrb);
+                }
+                    
                     
                 }
                 

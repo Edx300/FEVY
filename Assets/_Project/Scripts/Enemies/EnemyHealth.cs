@@ -34,6 +34,7 @@ public class EnemyHealth : MonoBehaviour
     {
         Vector3 position = _enemyTransform.position;
         GameObject heart = Instantiate(_item, position, Quaternion.identity);
+        heart.SetActive(true);
         Destroy(heart,10f);
     }
 
