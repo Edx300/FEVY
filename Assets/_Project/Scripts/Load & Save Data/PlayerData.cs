@@ -4,15 +4,25 @@ using UnityEngine;
 
 public class PlayerData : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public Health playerHealth;
+
+    public void SaveData()
     {
-        
+
+        PlayerPrefs.SetInt("_currentHp", playerHealth._currentHp);
+
+
+    }
+    
+    public void LoadData()
+    {
+        playerHealth._currentHp = PlayerPrefs.GetInt("_currentHp");
     }
 
-    // Update is called once per frame
-    void Update()
+    public void DeleteData()
     {
-        
+        PlayerPrefs.DeleteAll();
     }
+
+
 }

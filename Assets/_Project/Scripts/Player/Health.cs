@@ -7,7 +7,7 @@ using UnityEngine.Events;
 public class Health : MonoBehaviour
 {
     [SerializeField] private int _maxHp = 100;
-    [SerializeField] private int _currentHp = default;
+    [SerializeField] public int _currentHp = default;
     [SerializeField] private UnityEvent _onDie = new();
 
     public HealthBarScript healthBar;
