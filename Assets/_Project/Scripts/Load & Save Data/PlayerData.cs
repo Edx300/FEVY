@@ -1,12 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class PlayerData : MonoBehaviour
 {
     public Health playerHealth;
-    public NEWPlayerController controller;
+   // public NEWPlayerController controller;
+   
+    public Vector3 playerPos = Vector3.zero;
     public GameObject playerGameObject;
+
+    private void Start()
+    {
+        var tempPos = PlayerPrefs.GetString("PlayerPos", "Error");
+        if (tempPos.Equals("Error"))
+        {
+            playerPos = playerGameObject.transform.position;
+            PlayerPrefs.SetString("PlayerPos", JsonUtility.ToJson(playerPos));
+            Debug.Log("No pudo encontrar la ubicación");
+        }
+        else
+        {
+            playerPos = JsonUtility.FromJson<Vector3>(tempPos);
+            playerGameObject.transform.position = playerPos;
+        }
+    }
 
     public void SaveData()
     {
@@ -15,24 +34,9 @@ public class PlayerData : MonoBehaviour
         Debug.Log("Dato guardado, la vida es: " +  playerHealth.CurrentHP );
 
         //posicion
-        PlayerPrefs.SetString("Position", JsonUtility.ToJson(controller.PlayerPos));
-        Debug.Log("Dato guardado, la posición es: " + controller.PlayerPos);
-        //var tempPos = PlayerPrefs.GetString("PlayerPos", "Error");
-        /* 
-         if (tempPos.Equals("Error"))
-         {
-             controller.DefaultPos(controller.PlayerPos);
-             PlayerPrefs.SetString("PlayerPos", JsonUtility.ToJson(controller.PlayerPos));
-         }
-         else
-         {
-
-             JsonUtility.FromJson<Vector3>(PlayerPrefs.GetString("Position"));
-
-             Debug.Log("Dato guardado, la posición es: " + controller.PlayerPos);
-         }
-            */
-
+        playerPos = playerGameObject.transform.position;
+        PlayerPrefs.SetString("Position", JsonUtility.ToJson(playerPos));
+        Debug.Log("Dato guardado, la posición es: " + playerPos);
 
     }
     
@@ -41,7 +45,10 @@ public class PlayerData : MonoBehaviour
         playerHealth.ChangeHealth(PlayerPrefs.GetInt("_currentHp",100));
         Debug.Log("Dato cargado, la vida es: " + playerHealth.CurrentHP);
 
-        controller.ChangePos(JsonUtility.FromJson<Vector3>(PlayerPrefs.GetString("Position")));
+
+        playerGameObject.transform.position = JsonUtility.FromJson<Vector3>(PlayerPrefs.GetString("Position"));
+        Debug.Log("Tu posicion es:" + playerGameObject.transform.position);
+        //controller.ChangePos(JsonUtility.FromJson<Vector3>(PlayerPrefs.GetString("Position")));
     }
 
     public void DeleteData()

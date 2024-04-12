@@ -9,6 +9,8 @@ using UnityEngine.InputSystem.XR;
 
 public class NEWPlayerController : MonoBehaviour
 {
+    public PlayerData PlayerData;
+
     //stats
     [SerializeField] private int _speed;
     [SerializeField] public float _resistance = 100;
@@ -32,13 +34,13 @@ public class NEWPlayerController : MonoBehaviour
     private PlayerControls playerControls;
 
     private Rigidbody rb;
-    private Vector3 movement; //posicion
+    private Vector3 movement; 
 
     public HealthBarScript resistanceBar;
 
 
 
-    public Vector3 PlayerPos => movement; //para guardar
+   // public Vector3 PlayerPos => movement; //para guardar
 
     private void Awake()
     {
@@ -53,7 +55,8 @@ public class NEWPlayerController : MonoBehaviour
     {
 
         //movement = PlayerPrefs.GetString("PlayerPos", JsonUtility.ToJson());
-        ChangePos(movement);
+        //ChangePos(movement);
+        
         rb = GetComponent<Rigidbody>();
         resistanceBar.SetMaxHealth(_resistance);
 
@@ -61,7 +64,7 @@ public class NEWPlayerController : MonoBehaviour
 
     void Update()
     {
-        Debug.Log("posicion:" + movement);
+        //Debug.Log("posicion:" + movement);
         float x = playerControls.Player.Movement.ReadValue<Vector2>().x;
         float z = playerControls.Player.Movement.ReadValue<Vector2>().y;
 
@@ -154,7 +157,9 @@ public class NEWPlayerController : MonoBehaviour
             _tired = false;
         }
     }
-
+    
+    
+    /* Cosas que no sirvieron del guardado
     public void ChangePos(Vector3 val)
     {
         movement = val;
@@ -167,5 +172,5 @@ public class NEWPlayerController : MonoBehaviour
     {
         movement = _playerSprite.transform.position;
     }
-
+    */
 }
