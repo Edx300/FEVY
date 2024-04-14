@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.UI;
 
 public class PlayerData : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class PlayerData : MonoBehaviour
    
     public Vector3 playerPos = Vector3.zero;
     public GameObject playerGameObject;
+
 
     private void Start()
     {
@@ -24,7 +26,11 @@ public class PlayerData : MonoBehaviour
         {
             playerPos = JsonUtility.FromJson<Vector3>(tempPos);
             playerGameObject.transform.position = playerPos;
+            Debug.Log("Dato guardado, la posición es: " + playerPos);
         }
+
+        //saveButton.onClick.AddListener(SaveData);
+
     }
 
     public void SaveData()
@@ -36,14 +42,14 @@ public class PlayerData : MonoBehaviour
         //posicion
         playerPos = playerGameObject.transform.position;
         PlayerPrefs.SetString("Position", JsonUtility.ToJson(playerPos));
-        Debug.Log("Dato guardado, la posición es: " + playerPos);
+        //Debug.Log("Dato guardado, la posición es: " + playerPos);
 
     }
     
     public void LoadData()
     {
         playerHealth.ChangeHealth(PlayerPrefs.GetInt("_currentHp",100));
-        Debug.Log("Dato cargado, la vida es: " + playerHealth.CurrentHP);
+       // Debug.Log("Dato cargado, la vida es: " + playerHealth.CurrentHP);
 
 
         playerGameObject.transform.position = JsonUtility.FromJson<Vector3>(PlayerPrefs.GetString("Position"));

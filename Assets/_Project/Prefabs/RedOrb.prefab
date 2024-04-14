@@ -124,7 +124,8 @@ MonoBehaviour:
   _interactAction:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1940768038183803958, guid: 369351d4a1d638242b2af2e1996f6350,
+          type: 3}
         m_TargetAssemblyTypeName: PlayerManager, Assembly-CSharp
         m_MethodName: gotAnOrb
         m_Mode: 1
@@ -138,3 +139,10 @@ MonoBehaviour:
         m_CallState: 2
   _needsToDissapear: 1
   _gameObj: {fileID: 5897647062382898112}
+  Red: 1
+  Blue: 0
+  Green: 0
+  none: 0
+  _BlueOrb: {fileID: 0}
+  _RedOrb: {fileID: 5897647062382898112}
+  _GreenOrb: {fileID: 0}

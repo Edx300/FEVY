@@ -10,6 +10,8 @@ using UnityEngine.InputSystem.XR;
 public class NEWPlayerController : MonoBehaviour
 {
     public PlayerData PlayerData;
+    public GameObject PlayerPrefab;
+
 
     //stats
     [SerializeField] private int _speed;
@@ -46,6 +48,7 @@ public class NEWPlayerController : MonoBehaviour
     {
         playerControls = new PlayerControls();
     }
+
     private void OnEnable()
     {
         playerControls.Enable();
@@ -53,10 +56,11 @@ public class NEWPlayerController : MonoBehaviour
 
     void Start()
     {
-
+        PlayerPrefs.GetString("PlayerPos", JsonUtility.ToJson(PlayerData.playerPos));
+        PlayerPrefab.transform.position = PlayerData.playerPos;
         //movement = PlayerPrefs.GetString("PlayerPos", JsonUtility.ToJson());
         //ChangePos(movement);
-        
+
         rb = GetComponent<Rigidbody>();
         resistanceBar.SetMaxHealth(_resistance);
 

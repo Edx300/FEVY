@@ -30,16 +30,22 @@ public class HeartContAndOrbs : MonoBehaviour
                 if (_needsToDissapear)
                 {
                   if(none){
+
                     Destroy(_gameObj);
-                    } else if(Red){
+
+                  } else if(Red){
+
                         Destroy(_RedOrb);
-                    }else if(Blue) {
-                    Destroy(_BlueOrb);
-                }
-                  else if(Green)
-                {
-                    Destroy(_GreenOrb);
-                }
+
+                  }else if(Blue) {
+
+                        Destroy(_BlueOrb);
+
+                  }else if(Green){
+
+                        Destroy(_GreenOrb);
+
+                  }
                     
                     
                 }
