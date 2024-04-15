@@ -56,9 +56,8 @@ public class NEWPlayerController : MonoBehaviour
 
     void Start()
     {
-        PlayerPrefs.GetString("PlayerPos", JsonUtility.ToJson(PlayerData.playerPos));
-        PlayerPrefab.transform.position = PlayerData.playerPos;
-        //movement = PlayerPrefs.GetString("PlayerPos", JsonUtility.ToJson());
+        PlayerPrefs.GetString("PlayerPos", JsonUtility.ToJson(PlayerData.PLAYER));
+        PlayerPrefab.transform.position = PlayerData.PLAYER;
         //ChangePos(movement);
 
         rb = GetComponent<Rigidbody>();
@@ -91,7 +90,7 @@ public class NEWPlayerController : MonoBehaviour
         }
 
         //correr
-        if (Input.GetMouseButton(1) && !_tired)
+        if (Input.GetKey("left shift") && !_tired)
         {
             Run();
         }
@@ -133,7 +132,10 @@ public class NEWPlayerController : MonoBehaviour
     private void Jump()
     {
         rb.AddForce(Vector3.up * 7, ForceMode.Impulse);
-        //_anim.SetBool("IsWalk", movement != Vector3.zero); //animacion para saltar
+        _anim.SetTrigger("IsJump"); //animacion para saltar
+        
+        
+        
     }
 
 

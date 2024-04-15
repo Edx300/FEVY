@@ -10,16 +10,32 @@ public class HeartContAndOrbs : MonoBehaviour
     public bool _isInRange;
     public UnityEvent _interactAction;
 
-
-    
-
     [SerializeField] public bool _needsToDissapear;
     [SerializeField] public GameObject _gameObj;
 
 
-    [SerializeField] private bool Red, Blue, Green, none;
+    [SerializeField] public bool Red, Blue, Green, none; //para identificar individualmente cual es cual
+
+    [SerializeField] private bool Red1, Blue1, Green1; //para eliminar
+
+
+    public bool RED => Red1;
+    public bool BLUE => Blue1;
+    public bool GREEN => Green1;
 
     [SerializeField] private GameObject _BlueOrb, _RedOrb, _GreenOrb;
+
+    private void Start()
+    {
+        Red1 = (PlayerPrefs.GetInt("Red") != 0);
+        Blue1 = (PlayerPrefs.GetInt("Blue") != 0);
+        Green1 = (PlayerPrefs.GetInt("Green") != 0);
+
+        CheckREDOrb(RED);
+        CheckBLUEOrb(BLUE);
+        CheckGreenOrb(GREEN);
+        
+    }
 
     void Update()
     {
@@ -33,17 +49,25 @@ public class HeartContAndOrbs : MonoBehaviour
 
                     Destroy(_gameObj);
 
-                  } else if(Red){
+                  }
+                if(Red || Red1)
+                {
 
-                        Destroy(_RedOrb);
+                        _RedOrb.SetActive(false);
+                        Red1 = true;
 
-                  }else if(Blue) {
+                  }
+                if(Blue || Blue1) {
 
-                        Destroy(_BlueOrb);
+                        _BlueOrb.SetActive(false);
+                        Blue1 = true;
 
-                  }else if(Green){
+                  }
+                if(Green || Green1)
+                {
 
-                        Destroy(_GreenOrb);
+                        _GreenOrb.SetActive(false);
+                        Green1 = true;
 
                   }
                     
@@ -83,6 +107,50 @@ public class HeartContAndOrbs : MonoBehaviour
 
         }
     }
+
+    public void CheckREDOrb(bool val1)
+    {
+        Red1 = val1;
+
+         if (Red1)
+        {
+
+            _RedOrb.SetActive(false);
+
+        }
+        
+
+    }
+
+    public void CheckBLUEOrb(bool val1)
+    {
+        Blue1 = val1;
+
+        if (Blue1)
+        {
+
+            _BlueOrb.SetActive(false);
+
+        }
+
+
+    }
+
+    public void CheckGreenOrb(bool val1)
+    {
+        Green1 = val1;
+
+        if (Green1)
+        {
+
+            _GreenOrb.SetActive(false);
+
+        }
+
+
+    }
+
+
 
 
 }

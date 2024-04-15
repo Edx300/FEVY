@@ -1,0 +1,928 @@
+fileFormatVersion: 2
+guid: 0c8d7c014f447ce44b4d0cf8a1107e9d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 250
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpriteSheet_Agaric_0
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 6684
+        width: 492
+        height: 561
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac1516c5d11ba7e4e85b6d98a607cf85
+      internalID: 910812627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Agaric_1
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 6685
+        width: 492
+        height: 567
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cdff8015d8bb6e4e8175fda82301220
+      internalID: -122150250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Agaric_2
+      rect:
+        serializedVersion: 2
+        x: 1544
+        y: 6692
+        width: 503
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bdf6a70247c81443aad3a66859a744b
+      internalID: -404403881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Agaric_3
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 5944
+        width: 489
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a939feac86290d148be0a55dd17a5246
+      internalID: -725435041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Agaric_4
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 5937
+        width: 491
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b05acd8bcddb54847a3b5cdbaa115f96
+      internalID: -1267362310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Agaric_5
+      rect:
+        serializedVersion: 2
+        x: 1544
+        y: 5951
+        width: 488
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a94f39de88dd6e42b8d43b3da5ef3bd
+      internalID: -281406884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Agaric_6
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 5243
+        width: 489
+        height: 539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1678af85f0092244b8464ebdb8927b03
+      internalID: 1560454838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Agaric_7
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 5207
+        width: 492
+        height: 557
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22a19a9a4a241fd4da470124c7a1a32d
+      internalID: -1521763629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Agaric_8
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 5232
+        width: 490
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47823c6c484a17149968b63011525e38
+      internalID: 857984436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Agaric_9
+      rect:
+        serializedVersion: 2
+        x: 2255
+        y: 5203
+        width: 489
+        height: 558
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c86df8188259ffa46ae4aa6173a02e00
+      internalID: -1517388499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Agaric_10
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 4488
+        width: 491
+        height: 568
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67e14d86ad6aa6d4e89d2d79401705aa
+      internalID: 2141285014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Agaric_11
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 4484
+        width: 492
+        height: 561
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e74f2a8c7a5a394aa203ce99ed4796e
+      internalID: 1072015970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Agaric_12
+      rect:
+        serializedVersion: 2
+        x: 1569
+        y: 4524
+        width: 488
+        height: 532
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 931c2f3ab3547384f9c5480cf213ee37
+      internalID: -1528307158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Agaric_13
+      rect:
+        serializedVersion: 2
+        x: 2302
+        y: 4484
+        width: 489
+        height: 561
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 110bbfea740cf1a46bdc40f1ceb39380
+      internalID: -463116424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Agaric_14
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 3737
+        width: 492
+        height: 546
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fb40bf3044d3da45857d84d21a38291
+      internalID: -407886786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Agaric_15
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 3737
+        width: 489
+        height: 546
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5cc609858fb2314796d99d5ef336c6c
+      internalID: 966982478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Agaric_16
+      rect:
+        serializedVersion: 2
+        x: 1547
+        y: 3737
+        width: 503
+        height: 535
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eea493ced8dbf584890167c0283eceee
+      internalID: 702615833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Agaric_17
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 3019
+        width: 493
+        height: 545
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3032cb04ca0ffa47a8ccc74c41950ec
+      internalID: 1563976073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Agaric_18
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 3019
+        width: 492
+        height: 542
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4e0a96c2b3a93b4ca3858b0e6ea4bb3
+      internalID: -688173153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Agaric_19
+      rect:
+        serializedVersion: 2
+        x: 1569
+        y: 3019
+        width: 488
+        height: 538
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e41bc23ca108e543978ca205f63b469
+      internalID: 1064687923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Agaric_20
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 2274
+        width: 492
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b42aea9bca27da74fa2600cf50d98d98
+      internalID: 1215596429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Agaric_21
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 2288
+        width: 503
+        height: 543
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf1b964c61008a948abff98e9caefad3
+      internalID: -388926896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Agaric_22
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 2285
+        width: 511
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 847df142e1622cc46ac9d1a9d3e3b537
+      internalID: -139385979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Agaric_23
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 1551
+        width: 531
+        height: 557
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b3a57a4b93377c43b895b8dc03b2bc3
+      internalID: -160241524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Agaric_24
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 1555
+        width: 489
+        height: 543
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09b2898b513d69746ba68eca87cb7ff7
+      internalID: -1836438093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Agaric_25
+      rect:
+        serializedVersion: 2
+        x: 1558
+        y: 1555
+        width: 489
+        height: 542
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7d2ae8b0100b4b41a0d30e08a8e760e
+      internalID: 2146319223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Agaric_26
+      rect:
+        serializedVersion: 2
+        x: 3035
+        y: 1551
+        width: 492
+        height: 561
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baef08033ce193c4093dac598c22eb5c
+      internalID: -766972236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Agaric_27
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 1551
+        width: 489
+        height: 543
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 931677ee2ad7eb048a1dd95563259439
+      internalID: 1954929185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Agaric_28
+      rect:
+        serializedVersion: 2
+        x: 4422
+        y: 1551
+        width: 501
+        height: 543
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a96d99ad5058fd649afe41d1563165d5
+      internalID: 1335895743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Agaric_29
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 836
+        width: 493
+        height: 557
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f704ee506d752943975f7b291327e80
+      internalID: -11973826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Agaric_30
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 843
+        width: 575
+        height: 543
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1552b4723ab03d140a76606b2d13f935
+      internalID: 82877468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Agaric_31
+      rect:
+        serializedVersion: 2
+        x: 1522
+        y: 847
+        width: 543
+        height: 539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8c32b6c1b702cb439d3ea7c724da6a9
+      internalID: -1494009848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Agaric_32
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 930
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 262665cfddf749341af557d07c3a35cf
+      internalID: -1731667755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Agaric_33
+      rect:
+        serializedVersion: 2
+        x: 3014
+        y: 803
+        width: 493
+        height: 558
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f60d5afb0bbb69746b9e1e7f168b60cf
+      internalID: -1210026068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Agaric_34
+      rect:
+        serializedVersion: 2
+        x: 3693
+        y: 800
+        width: 614
+        height: 542
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19d9a03d7d57a434cb3ff30799009875
+      internalID: -842417985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Agaric_35
+      rect:
+        serializedVersion: 2
+        x: 4361
+        y: 800
+        width: 688
+        height: 542
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42fdafa29e75e1f4abd407541045e959
+      internalID: 675945542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Agaric_36
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 110
+        width: 493
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb8d3b23e8cb56b469b4293b96e7f45c
+      internalID: -578751371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 48d360d2b929f444f890e50bb186e759
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      SpriteSheet_Agaric_0: 910812627
+      SpriteSheet_Agaric_1: -122150250
+      SpriteSheet_Agaric_10: 2141285014
+      SpriteSheet_Agaric_11: 1072015970
+      SpriteSheet_Agaric_12: -1528307158
+      SpriteSheet_Agaric_13: -463116424
+      SpriteSheet_Agaric_14: -407886786
+      SpriteSheet_Agaric_15: 966982478
+      SpriteSheet_Agaric_16: 702615833
+      SpriteSheet_Agaric_17: 1563976073
+      SpriteSheet_Agaric_18: -688173153
+      SpriteSheet_Agaric_19: 1064687923
+      SpriteSheet_Agaric_2: -404403881
+      SpriteSheet_Agaric_20: 1215596429
+      SpriteSheet_Agaric_21: -388926896
+      SpriteSheet_Agaric_22: -139385979
+      SpriteSheet_Agaric_23: -160241524
+      SpriteSheet_Agaric_24: -1836438093
+      SpriteSheet_Agaric_25: 2146319223
+      SpriteSheet_Agaric_26: -766972236
+      SpriteSheet_Agaric_27: 1954929185
+      SpriteSheet_Agaric_28: 1335895743
+      SpriteSheet_Agaric_29: -11973826
+      SpriteSheet_Agaric_3: -725435041
+      SpriteSheet_Agaric_30: 82877468
+      SpriteSheet_Agaric_31: -1494009848
+      SpriteSheet_Agaric_32: -1731667755
+      SpriteSheet_Agaric_33: -1210026068
+      SpriteSheet_Agaric_34: -842417985
+      SpriteSheet_Agaric_35: 675945542
+      SpriteSheet_Agaric_36: -578751371
+      SpriteSheet_Agaric_4: -1267362310
+      SpriteSheet_Agaric_5: -281406884
+      SpriteSheet_Agaric_6: 1560454838
+      SpriteSheet_Agaric_7: -1521763629
+      SpriteSheet_Agaric_8: 857984436
+      SpriteSheet_Agaric_9: -1517388499
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

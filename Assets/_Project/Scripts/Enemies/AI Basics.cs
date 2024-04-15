@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using Cinemachine;
 
 public class AIBasics : MonoBehaviour
 {
-
 
     public NavMeshAgent agent;
     public Transform player;
@@ -15,6 +15,7 @@ public class AIBasics : MonoBehaviour
     //animator sprite
     //[SerializeField] private Animator _anim;
     [SerializeField] private SpriteRenderer _enemySprite;
+    [SerializeField] private GameObject enemy;
 
 
     //Walking stuff
@@ -34,6 +35,7 @@ public class AIBasics : MonoBehaviour
 
     void Start()
     {
+        enemy = GameObject.Find("Main Camera");
         player = GameObject.Find("Player").transform; //definir que es el player y su posición
         agent = GetComponent<NavMeshAgent>();
     }
@@ -43,7 +45,7 @@ public class AIBasics : MonoBehaviour
     {
         //Look At
 
-        //_enemySprite
+        _enemySprite.transform.LookAt(enemy.transform);
 
         //REVISAR SI EL JUGADOR ESTA CERCA
         playerInSight = Physics.CheckSphere(transform.position, sightRange, LPlayer);

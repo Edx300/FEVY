@@ -6,6 +6,7 @@ using UnityEngine.Events;
 
 public class Health : MonoBehaviour
 {
+    public Animator animator;
     [SerializeField] private int _maxHp = 100;
     [SerializeField] private int _currentHp = default;
     [SerializeField] private UnityEvent _onDie = new();
@@ -22,6 +23,7 @@ public class Health : MonoBehaviour
 
     public void CollisionDamage() //si choca, pierde vida
     {
+        animator.SetTrigger("isHurt");
         DoDamage(10);
     }
 
@@ -30,6 +32,7 @@ public class Health : MonoBehaviour
         _currentHp -= Mathf.Abs(val);
         if (_currentHp <= 0)
         {
+            animator.SetBool("dies", true);
             _onDie?.Invoke();
             _currentHp = _maxHp;
         }
@@ -55,7 +58,7 @@ public class Health : MonoBehaviour
     {
        
         _currentHp = val;
-        Debug.Log(val);
+        Debug.Log("VIDAS: " + val);
         healthBar.SetHealth(_currentHp);
     }
 

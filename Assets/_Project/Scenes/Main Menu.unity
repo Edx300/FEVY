@@ -315,8 +315,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43d07666b77b3bc4a845a69fd8c1f5d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerManager: {fileID: 0}
   playerHealth: {fileID: 7098461059165190633, guid: 369351d4a1d638242b2af2e1996f6350,
     type: 3}
+  DeleteRorbs: {fileID: 0}
+  DeleteBorbs: {fileID: 0}
+  DeleteGorbs: {fileID: 0}
   playerGameObject: {fileID: 7787968101706572137, guid: 369351d4a1d638242b2af2e1996f6350,
     type: 3}
 --- !u!1 &317221527
@@ -626,18 +630,6 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: test2
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PlayerData, Assembly-CSharp
-        m_MethodName: LoadData
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &819922084

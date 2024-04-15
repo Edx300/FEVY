@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerAttack : MonoBehaviour
 {
     public Animator animator;
+    public PlayerManager manager;
 
     public Transform attackPoint;
 
@@ -28,7 +29,15 @@ public class PlayerAttack : MonoBehaviour
     void Attack()
     {
         //attack animation
-        animator.SetTrigger("IsAttack");
+        if (manager._checkAttack)
+        {
+            animator.SetTrigger("IsAttack2");
+        }else if(!manager._checkAttack) 
+        {
+            animator.SetTrigger("IsAttack");
+
+        }
+        
         //detect enemies
         Collider[] hitEnemies = Physics.OverlapSphere(attackPoint.position, attackRange, enemyLayers);
     
