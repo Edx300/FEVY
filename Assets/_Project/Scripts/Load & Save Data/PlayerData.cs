@@ -10,7 +10,7 @@ public class PlayerData : MonoBehaviour
     public Health playerHealth;
     public HeartContAndOrbs DeleteROrb , DeleteBOrb , DeleteGOrb;
 
-   // public NEWPlayerController controller;
+   //public NEWPlayerController controller;
    
     private Vector3 playerPos = Vector3.zero;
     public GameObject playerGameObject;
@@ -22,11 +22,12 @@ public class PlayerData : MonoBehaviour
     private void Start()
     {
         //CARGAR POSICION
-        var tempPos = PlayerPrefs.GetString("PlayerPos", "Error");
+        var tempPos = PlayerPrefs.GetString("Position", "Error");
         if (tempPos.Equals("Error"))
         {
             playerPos = playerGameObject.transform.position;
-            PlayerPrefs.SetString("PlayerPos", JsonUtility.ToJson(playerPos));
+            
+            PlayerPrefs.SetString("Position", JsonUtility.ToJson(playerPos));
             Debug.Log("No pudo encontrar la ubicación");
         }
         else
@@ -48,7 +49,6 @@ public class PlayerData : MonoBehaviour
         playerPos = playerGameObject.transform.position;
         PlayerPrefs.SetString("Position", JsonUtility.ToJson(playerPos));
         Debug.Log("La posición es: " + playerPos);
-
         //cantidad de orbes
         PlayerPrefs.SetInt("_currentOrbs", PlayerManager.ORBS);
         Debug.Log("Total de Orbes: " + PlayerManager.ORBS);

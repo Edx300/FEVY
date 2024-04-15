@@ -15,7 +15,7 @@ public class AIBasics : MonoBehaviour
     //animator sprite
     //[SerializeField] private Animator _anim;
     [SerializeField] private SpriteRenderer _enemySprite;
-    [SerializeField] private GameObject enemy;
+    [SerializeField] private GameObject camara;
 
 
     //Walking stuff
@@ -35,7 +35,7 @@ public class AIBasics : MonoBehaviour
 
     void Start()
     {
-        enemy = GameObject.Find("Main Camera");
+        camara = GameObject.Find("Main Camera");
         player = GameObject.Find("Player").transform; //definir que es el player y su posición
         agent = GetComponent<NavMeshAgent>();
     }
@@ -45,7 +45,7 @@ public class AIBasics : MonoBehaviour
     {
         //Look At
 
-        _enemySprite.transform.LookAt(enemy.transform);
+        _enemySprite.transform.LookAt(camara.transform);
 
         //REVISAR SI EL JUGADOR ESTA CERCA
         playerInSight = Physics.CheckSphere(transform.position, sightRange, LPlayer);

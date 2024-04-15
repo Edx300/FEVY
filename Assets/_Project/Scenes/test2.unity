@@ -1621,7 +1621,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   _enemySprite: {fileID: 0}
-  enemy: {fileID: 0}
+  camara: {fileID: 0}
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 5
   timeBetweenAttacks: 5
@@ -3190,6 +3190,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 249258382}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &251320952
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 251320953}
+  m_Layer: 0
+  m_Name: OrbsManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &251320953
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 251320952}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &261648866
 GameObject:
   m_ObjectHideFlags: 0
@@ -3330,7 +3361,7 @@ PrefabInstance:
     - target: {fileID: 9098433991051491232, guid: 41d488c74dec686409bf8f1589affc25,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -86.79
+      value: 0.19
       objectReference: {fileID: 0}
     - target: {fileID: 9098433991051491232, guid: 41d488c74dec686409bf8f1589affc25,
         type: 3}
@@ -3340,7 +3371,7 @@ PrefabInstance:
     - target: {fileID: 9098433991051491232, guid: 41d488c74dec686409bf8f1589affc25,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 85.56
+      value: 7.4
       objectReference: {fileID: 0}
     - target: {fileID: 9098433991051491232, guid: 41d488c74dec686409bf8f1589affc25,
         type: 3}
@@ -3828,7 +3859,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   _enemySprite: {fileID: 0}
-  enemy: {fileID: 0}
+  camara: {fileID: 0}
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 5
   timeBetweenAttacks: 5
@@ -4135,7 +4166,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   _enemySprite: {fileID: 0}
-  enemy: {fileID: 0}
+  camara: {fileID: 0}
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 5
   timeBetweenAttacks: 5
@@ -6555,7 +6586,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   _enemySprite: {fileID: 0}
-  enemy: {fileID: 0}
+  camara: {fileID: 0}
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 5
   timeBetweenAttacks: 5
@@ -7102,7 +7133,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   _enemySprite: {fileID: 0}
-  enemy: {fileID: 0}
+  camara: {fileID: 0}
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 5
   timeBetweenAttacks: 5
@@ -16807,6 +16838,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4397316076539837690, guid: 9c12930137449574b921d20fa0f12ca0,
         type: 3}
+      propertyPath: _RedOrb
+      value: 
+      objectReference: {fileID: 1875498095}
+    - target: {fileID: 4397316076539837690, guid: 9c12930137449574b921d20fa0f12ca0,
+        type: 3}
+      propertyPath: _BlueOrb
+      value: 
+      objectReference: {fileID: 191305570}
+    - target: {fileID: 4397316076539837690, guid: 9c12930137449574b921d20fa0f12ca0,
+        type: 3}
+      propertyPath: _GreenOrb
+      value: 
+      objectReference: {fileID: 363992919}
+    - target: {fileID: 4397316076539837690, guid: 9c12930137449574b921d20fa0f12ca0,
+        type: 3}
       propertyPath: _interactAction.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
       objectReference: {fileID: 0}
@@ -16961,7 +17007,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   _enemySprite: {fileID: 0}
-  enemy: {fileID: 0}
+  camara: {fileID: 0}
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 5
   timeBetweenAttacks: 5
@@ -18002,17 +18048,17 @@ PrefabInstance:
     - target: {fileID: 2794912556199872694, guid: c5aa1fc378c728f4496218ff86120500,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 61.34
+      value: -6.2
       objectReference: {fileID: 0}
     - target: {fileID: 2794912556199872694, guid: c5aa1fc378c728f4496218ff86120500,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 62.88
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2794912556199872694, guid: c5aa1fc378c728f4496218ff86120500,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 104.91
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2794912556199872694, guid: c5aa1fc378c728f4496218ff86120500,
         type: 3}
@@ -19120,7 +19166,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 90
+  m_Constraints: 122
   m_CollisionDetection: 0
 --- !u!136 &1578333055
 CapsuleCollider:
@@ -20379,17 +20425,17 @@ PrefabInstance:
     - target: {fileID: 2821972299785955397, guid: 442d8570e9a6bac4ab85d4b5e1ab0484,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -93.27
+      value: -2.83
       objectReference: {fileID: 0}
     - target: {fileID: 2821972299785955397, guid: 442d8570e9a6bac4ab85d4b5e1ab0484,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 26.48
+      value: -0.2
       objectReference: {fileID: 0}
     - target: {fileID: 2821972299785955397, guid: 442d8570e9a6bac4ab85d4b5e1ab0484,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 173.65
+      value: 8.6
       objectReference: {fileID: 0}
     - target: {fileID: 2821972299785955397, guid: 442d8570e9a6bac4ab85d4b5e1ab0484,
         type: 3}
@@ -25012,6 +25058,7 @@ SceneRoots:
   - {fileID: 1458928553}
   - {fileID: 1740774983}
   - {fileID: 177140226}
+  - {fileID: 251320953}
   - {fileID: 936912451}
   - {fileID: 1358007380}
   - {fileID: 1538996143}

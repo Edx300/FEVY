@@ -16,7 +16,8 @@ public class HeartContAndOrbs : MonoBehaviour
 
     [SerializeField] public bool Red, Blue, Green, none; //para identificar individualmente cual es cual
 
-    [SerializeField] private bool Red1, Blue1, Green1; //para eliminar
+    [SerializeField] private bool Red1, Blue1, Green1;//para eliminar
+    //private bool r4 = false;
 
 
     public bool RED => Red1;
@@ -31,9 +32,12 @@ public class HeartContAndOrbs : MonoBehaviour
         Blue1 = (PlayerPrefs.GetInt("Blue") != 0);
         Green1 = (PlayerPrefs.GetInt("Green") != 0);
 
-        CheckREDOrb(RED);
-        CheckBLUEOrb(BLUE);
-        CheckGreenOrb(GREEN);
+        //Debug.Log("r1" + Red1);
+        //Debug.Log("b1" + Blue1);
+        //Debug.Log("g1" + Green1);
+        //CheckREDOrb(RED);
+        //CheckBLUEOrb(BLUE);
+        //CheckGreenOrb(GREEN);
         
     }
 
@@ -55,6 +59,7 @@ public class HeartContAndOrbs : MonoBehaviour
 
                         _RedOrb.SetActive(false);
                         Red1 = true;
+                        //r4 = true;
 
                   }
                 if(Blue || Blue1) {

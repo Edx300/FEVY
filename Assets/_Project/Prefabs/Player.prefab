@@ -343,7 +343,7 @@ Transform:
   m_GameObject: {fileID: 7787968101706572137}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -8.071411, y: 23.20893, z: 148.75256}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -365,6 +365,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18da528708008fd48ab151b49caa8c5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
   _maxHp: 100
   _currentHp: 0
   _onDie:
@@ -396,6 +397,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 3031600587892275269}
+  manager: {fileID: 0}
   attackPoint: {fileID: 3524970652637215141}
   attackRange: 2.83
   enemyLayers:
@@ -473,7 +475,8 @@ MonoBehaviour:
   controller: {fileID: 1013980790220027570}
   _door: {fileID: 379582148560954836, guid: 7fd3230bc294dee40a91efe8fbc06f6f, type: 3}
   icon: {fileID: 6776994181677291309}
-  _adquiredOrbs: 0
+  _checkAttack: 0
+  _checkRes: 0
 --- !u!54 &9145911361063340909
 Rigidbody:
   m_ObjectHideFlags: 0
