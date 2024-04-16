@@ -6,7 +6,7 @@ TextureImporter:
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -37,24 +37,24 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 250
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -95,18 +95,421 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: SpriteSheet_Yokai2_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 2470
+        width: 729
+        height: 578
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3130836fc9204d48b2c41084ddb137c
+      internalID: -1813540996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Yokai2_1
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 2998
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aea2576f38571d4ab2eab023ed64412
+      internalID: -25757730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Yokai2_2
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 2481
+        width: 729
+        height: 575
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f49a15b488aa3a94bb0ad59a1fcf64be
+      internalID: 2115780053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Yokai2_3
+      rect:
+        serializedVersion: 2
+        x: 1872
+        y: 3004
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 981c7dc362298164896ffa0488a4ef07
+      internalID: 1252360043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Yokai2_4
+      rect:
+        serializedVersion: 2
+        x: 1882
+        y: 2470
+        width: 733
+        height: 578
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 615fd33c9b2da924fa9784ae057cb357
+      internalID: -2123069676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Yokai2_5
+      rect:
+        serializedVersion: 2
+        x: 2773
+        y: 2479
+        width: 727
+        height: 579
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d27f3d1bc602ef946b5bc2d76adef3f8
+      internalID: -177916595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Yokai2_8
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1736
+        width: 729
+        height: 576
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bf7d73b8b2e3994a9de15a974cbfe49
+      internalID: 1879272215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Yokai2_9
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 1736
+        width: 729
+        height: 578
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a3639de50a8d3441a03fada966021c9
+      internalID: 955379969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Yokai2_10
+      rect:
+        serializedVersion: 2
+        x: 1865
+        y: 1734
+        width: 728
+        height: 577
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00907524a03aea24ea160f14b3072031
+      internalID: 277581831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Yokai2_12
+      rect:
+        serializedVersion: 2
+        x: 1858
+        y: 2261
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31df87927807bc9418e9bc6932377b4f
+      internalID: -290534050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Yokai2_14
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 996
+        width: 729
+        height: 579
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b9087cf5d4b1484d8c5bd59aba1707d
+      internalID: -681292363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Yokai2_15
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 996
+        width: 729
+        height: 578
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ea48dec17a050b4c989d84256c23ee7
+      internalID: -52344792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Yokai2_16
+      rect:
+        serializedVersion: 2
+        x: 1879
+        y: 994
+        width: 727
+        height: 577
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edab3cba086d1ba44832d3bde70ab485
+      internalID: 1051443836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Yokai2_18
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 1521
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e44a826f66d171a48a7ee20c8e07c766
+      internalID: -309186704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Yokai2_20
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 258
+        width: 725
+        height: 582
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecd9d9c28147c8342877e7778411b9a3
+      internalID: 1718111564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Yokai2_21
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 819
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aedaa3a0d9ee00d4eb3251ca035bde25
+      internalID: -157611943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Yokai2_22
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 262
+        width: 669
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8524f2d65c8fb54b8b250e6810f3df6
+      internalID: 295020928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Yokai2_23
+      rect:
+        serializedVersion: 2
+        x: 1832
+        y: 260
+        width: 731
+        height: 452
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 575c116a223f830459a8af4863ba33cb
+      internalID: 1619093644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 96288ba3b8dae4b4bb2789732b0ee6d9
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SpriteSheet_Yokai2_0: -1813540996
+      SpriteSheet_Yokai2_1: -25757730
+      SpriteSheet_Yokai2_10: 277581831
+      SpriteSheet_Yokai2_11: 1708652124
+      SpriteSheet_Yokai2_12: -290534050
+      SpriteSheet_Yokai2_13: 1642818208
+      SpriteSheet_Yokai2_14: -681292363
+      SpriteSheet_Yokai2_15: -52344792
+      SpriteSheet_Yokai2_16: 1051443836
+      SpriteSheet_Yokai2_17: -1539409070
+      SpriteSheet_Yokai2_18: -309186704
+      SpriteSheet_Yokai2_19: -1193183424
+      SpriteSheet_Yokai2_2: 2115780053
+      SpriteSheet_Yokai2_20: 1718111564
+      SpriteSheet_Yokai2_21: -157611943
+      SpriteSheet_Yokai2_22: 295020928
+      SpriteSheet_Yokai2_23: 1619093644
+      SpriteSheet_Yokai2_24: -707430069
+      SpriteSheet_Yokai2_3: 1252360043
+      SpriteSheet_Yokai2_4: -2123069676
+      SpriteSheet_Yokai2_5: -177916595
+      SpriteSheet_Yokai2_6: 1730038559
+      SpriteSheet_Yokai2_7: 610640638
+      SpriteSheet_Yokai2_8: 1879272215
+      SpriteSheet_Yokai2_9: 955379969
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
