@@ -6,7 +6,12 @@ using UnityEngine.AI;
 public class AIEnemyProjectile : MonoBehaviour
 {
 
-    public NavMeshAgent agent;
+    [SerializeField] private NavMeshAgent agent;
+    [SerializeField] private Animator _anim;
+
+    [SerializeField] private SpriteRenderer _enemySprite;
+    [SerializeField] private GameObject _camara;
+
     public Transform player;
     public LayerMask LTerrain, LPlayer;
 
@@ -29,6 +34,7 @@ public class AIEnemyProjectile : MonoBehaviour
 
     void Start()
     {
+        _camara = GameObject.Find("Main Camera");
         player = GameObject.Find("Player").transform; //definir que es el player y su posición
         agent = GetComponent<NavMeshAgent>();
     }
@@ -36,6 +42,9 @@ public class AIEnemyProjectile : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Look At
+        _enemySprite.transform.LookAt(_camara.transform);
+
         //REVISAR SI EL JUGADOR ESTA CERCA
         playerInSight = Physics.CheckSphere(transform.position, sightRange, LPlayer);
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, LPlayer);
@@ -52,6 +61,7 @@ public class AIEnemyProjectile : MonoBehaviour
 
         if (playerInSight && playerInAttackRange)
         {
+            //_anim.SetTrigger("attack");
             Attacking();
         }
 
@@ -86,6 +96,15 @@ public class AIEnemyProjectile : MonoBehaviour
 
         walkPoint = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.z + randomZ);
 
+        if (randomX != 0 && randomX > 0)
+        {
+            _enemySprite.flipX = true;
+        }
+        //regresar a la normalidad
+        if (randomX != 0 && randomX < 0)
+        {
+            _enemySprite.flipX = false;
+        }
 
         if (Physics.Raycast(walkPoint, -transform.up, 2f, LTerrain))
         {
@@ -106,6 +125,7 @@ public class AIEnemyProjectile : MonoBehaviour
 
         if (!alreadyAttacked)
         {
+            _anim.SetTrigger("attack");
             Rigidbody rb = Instantiate(projectile, _spawnPoint.position, Quaternion.identity).GetComponent<Rigidbody>();
             
             

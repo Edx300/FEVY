@@ -209,7 +209,7 @@ MonoBehaviour:
       - m_Target: {fileID: 7098461059165190633, guid: 369351d4a1d638242b2af2e1996f6350,
           type: 3}
         m_TargetAssemblyTypeName: Health, Assembly-CSharp
-        m_MethodName: RestoreHealth
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -221,3 +221,13 @@ MonoBehaviour:
         m_CallState: 2
   _needsToDissapear: 1
   _gameObj: {fileID: 2761512437136743039}
+  Red: 0
+  Blue: 0
+  Green: 0
+  none: 0
+  Red1: 0
+  Blue1: 0
+  Green1: 0
+  _BlueOrb: {fileID: 0}
+  _RedOrb: {fileID: 0}
+  _GreenOrb: {fileID: 0}

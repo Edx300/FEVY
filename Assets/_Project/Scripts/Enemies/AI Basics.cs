@@ -7,9 +7,10 @@ using Cinemachine;
 public class AIBasics : MonoBehaviour
 {
 
-    public NavMeshAgent agent;
+    [SerializeField] private NavMeshAgent agent;
     public Transform player;
     public LayerMask LTerrain, LPlayer;
+    [SerializeField] private Animator animator;
 
 
     //animator sprite
@@ -31,7 +32,7 @@ public class AIBasics : MonoBehaviour
     public float sightRange, attackRange;
     public bool playerInSight, playerInAttackRange;
 
-
+    private float randomX, randomZ;
 
     void Start()
     {
@@ -44,7 +45,6 @@ public class AIBasics : MonoBehaviour
     void Update()
     {
         //Look At
-
         _enemySprite.transform.LookAt(camara.transform);
 
         //REVISAR SI EL JUGADOR ESTA CERCA
@@ -63,6 +63,7 @@ public class AIBasics : MonoBehaviour
 
         if (playerInSight && playerInAttackRange)
         {
+            animator.SetTrigger("isattack");
             Attacking();
         }
 
@@ -73,11 +74,13 @@ public class AIBasics : MonoBehaviour
         if(!walkPointSet) 
         {
             SearchWalkPoint();
+            animator.SetTrigger("isWalk");
         }
 
         if (walkPointSet)
         {
             agent.SetDestination(walkPoint);
+            
         }
 
         Vector3 distanceToWalkPoint = transform.position - walkPoint;
@@ -92,13 +95,14 @@ public class AIBasics : MonoBehaviour
 
     private void SearchWalkPoint() 
     {
-        float randomZ = Random.Range(-walkPointRange, walkPointRange);
-        float randomX = Random.Range(-walkPointRange, walkPointRange);
+         randomZ = Random.Range(-walkPointRange, walkPointRange);
+         randomX = Random.Range(-walkPointRange, walkPointRange);
 
         walkPoint = new Vector3 (transform.position.x + randomX, transform.position.y, transform.position.z + randomZ);
+        
+        CheckFlip();
 
-
-        if(Physics.Raycast(walkPoint, -transform.up, 2f, LTerrain))
+        if (Physics.Raycast(walkPoint, -transform.up, 2f, LTerrain))
         {
             walkPointSet = true;
         }
@@ -111,13 +115,14 @@ public class AIBasics : MonoBehaviour
     }
     private void Attacking()
     {
+
         agent.SetDestination (transform.position);
 
         transform.LookAt(player);
 
         if(!alreadyAttacked)
         {
- 
+
             Debug.Log("Ataque de enemigo!");
            
 
@@ -133,9 +138,17 @@ public class AIBasics : MonoBehaviour
     }
 
 
-    private void Death()
+    private void CheckFlip()
     {
-        Destroy(gameObject);
+        if (randomX != 0 && randomX > 0)
+        {
+            _enemySprite.flipX = true;
+        }
+        //regresar a la normalidad
+        if (randomX != 0 && randomX < 0)
+        {
+            _enemySprite.flipX = false;
+        }
     }
 
 }

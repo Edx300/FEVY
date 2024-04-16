@@ -5,13 +5,14 @@ using UnityEngine.Events;
 
 public class EnemyHealth : MonoBehaviour
 {
-
-    [SerializeField] public float _EnemyHp = 10;
+    [SerializeField] private Animator _anim;
+    [SerializeField] private float _EnemyHp = 10;
     public GameObject _item;
     public Transform _enemyTransform;
 
     public void TakeDamage(float damage)
     {
+        _anim.SetTrigger("Hurt");
         _EnemyHp -= damage;
 
         if(_EnemyHp <= 0)
