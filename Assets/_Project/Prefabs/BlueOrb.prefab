@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8493252381024343431}
   - component: {fileID: 5306716876783213505}
   - component: {fileID: 1846631997699190490}
+  - component: {fileID: 3684005625605837677}
   m_Layer: 0
   m_Name: BlueOrb
   m_TagString: Untagged
@@ -107,3 +108,19 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3684005625605837677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8308242095117180154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95dff63012666c649ad1cc4dc01b4169, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isInRange: 0
+  _interact:
+    m_PersistentCalls:
+      m_Calls: []

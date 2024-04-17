@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7153200547801791779}
   - component: {fileID: 5821145096768272648}
   - component: {fileID: 7440786156202762680}
+  - component: {fileID: 3085330958885858479}
   m_Layer: 0
   m_Name: GreenOrb
   m_TagString: Untagged
@@ -107,3 +108,19 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3085330958885858479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6695364482133185238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7409499d02c969445b0e9d21e9a60b5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isInRange: 0
+  _interact:
+    m_PersistentCalls:
+      m_Calls: []

@@ -14,4 +14,11 @@ public class ChangeScenes : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void DeleteData()
+    {
+        PlayerPrefs.DeleteAll();
+    }
+
+
 }

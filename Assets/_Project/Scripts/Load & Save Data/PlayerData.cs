@@ -8,7 +8,7 @@ public class PlayerData : MonoBehaviour
 {
     public PlayerManager PlayerManager;
     public Health playerHealth;
-    //public HeartContAndOrbs DeleteROrb , DeleteBOrb , DeleteGOrb;
+    public Orbes DeleteROrb , DeleteBOrb , DeleteGOrb;
 
    //public NEWPlayerController controller;
    
@@ -54,17 +54,11 @@ public class PlayerData : MonoBehaviour
         Debug.Log("Total de Orbes: " + PlayerManager.ORBS);
 
         //visibilidad de orbes
-        //PlayerPrefs.SetInt("Red", (DeleteROrb.RED ? 1 : 0));
-        //PlayerPrefs.SetInt("Blue", (DeleteBOrb.BLUE ? 1 : 0));
-        //PlayerPrefs.SetInt("Green", (DeleteGOrb.GREEN ? 1 : 0));
+        PlayerPrefs.SetInt("Red", (DeleteROrb.RED ? 1 : 0));
+        PlayerPrefs.SetInt("Blue", (DeleteBOrb.BLUE ? 1 : 0));
+        PlayerPrefs.SetInt("Green", (DeleteGOrb.GREEN ? 1 : 0));
 
     }
    
-    
-    public void DeleteData()
-    {
-        PlayerPrefs.DeleteAll();
-    }
-
 
 }

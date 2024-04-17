@@ -226,6 +226,8 @@ MonoBehaviour:
   _EnemyHp: 15
   _item: {fileID: 2761512437136743039, guid: 9c12930137449574b921d20fa0f12ca0, type: 3}
   _enemyTransform: {fileID: 4823255583764669967}
+  _enemyParticle: {fileID: 6959695139065308658, guid: 385e3294cc98bd04fa75eeb7a302edc6,
+    type: 3}
 --- !u!114 &2203876361174549186
 MonoBehaviour:
   m_ObjectHideFlags: 0

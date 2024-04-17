@@ -303,6 +303,8 @@ MonoBehaviour:
   _EnemyHp: 10
   _item: {fileID: 2761512437136743039, guid: 9c12930137449574b921d20fa0f12ca0, type: 3}
   _enemyTransform: {fileID: 548947167423113942}
+  _enemyParticle: {fileID: 6959695139065308658, guid: 385e3294cc98bd04fa75eeb7a302edc6,
+    type: 3}
 --- !u!195 &8551213327591630766
 NavMeshAgent:
   m_ObjectHideFlags: 0

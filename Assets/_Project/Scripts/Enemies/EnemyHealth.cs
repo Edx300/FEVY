@@ -10,6 +10,8 @@ public class EnemyHealth : MonoBehaviour
     public GameObject _item;
     public Transform _enemyTransform;
 
+    [SerializeField] private ParticleSystem _enemyParticle;
+
     public void TakeDamage(float damage)
     {
         _anim.SetTrigger("Hurt");
@@ -23,8 +25,10 @@ public class EnemyHealth : MonoBehaviour
 
     public void Death()
     {
-
+        Vector3 position = _enemyTransform.position;
         GameObject.Destroy(gameObject);
+        _enemyParticle = Instantiate(_enemyParticle, position, Quaternion.identity);
+        _enemyParticle.Play();
         DropItem();
 
 
