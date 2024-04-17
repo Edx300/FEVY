@@ -74,7 +74,7 @@ public class AIBasics : MonoBehaviour
         if(!walkPointSet) 
         {
             SearchWalkPoint();
-            animator.SetTrigger("isWalk");
+       
         }
 
         if (walkPointSet)
